@@ -1,6 +1,6 @@
 //loop statement --for..in and for..of
 
-function giveMeFive(obj){
+function giveMeFive(obj) {
   let fiveWords = [];
   for (let key in obj) {
     if (key.length == 5) {
@@ -64,10 +64,10 @@ function buildFun(n){
 function buildFun(n){
 	let res = [];
 	for (var i = 0; i < n; i++){
-  	let number = i;
-		res.push(function() {
-		      return number;
-    });
+	   let number = i;
+	   res.push(function() {
+	      return number;
+	   });
 	}
 	return res;
 }
