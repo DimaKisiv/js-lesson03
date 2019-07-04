@@ -1,3 +1,18 @@
+//loop statement --for..in and for..of
+
+function giveMeFive(obj){
+  let fiveWords = [];
+  for (let key in obj) {
+    if (key.length == 5) {
+      fiveWords.push(key);
+    }
+    if (obj[key].length == 5) {
+      fiveWords.push(obj[key]);
+    }
+  }
+  return fiveWords;
+}
+
 //Geometry Basics: Circle Circumference in 2D
 
 function circleCircumference(circle) {
