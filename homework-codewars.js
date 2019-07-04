@@ -12,19 +12,21 @@ function whatNumberIsIt(n) {
   if (isNaN(n)) {
     return rTextPrefix + 'NaN';
   }
-  if (Number.MAX_VALUE == n) {
+  else if (Number.MAX_VALUE == n) {
     return rTextPrefix + 'MAX_VALUE';
   }
-  if (Number.MIN_VALUE == n) {
+  else if (Number.MIN_VALUE == n) {
     return rTextPrefix + 'MIN_VALUE';
   }
-  if (Number.NEGATIVE_INFINITY == n) {
+  else if (Number.NEGATIVE_INFINITY == n) {
     return rTextPrefix + 'NEGATIVE_INFINITY';
   }
-  if (Number.POSITIVE_INFINITY == n) {
+  else if (Number.POSITIVE_INFINITY == n) {
     return rTextPrefix + 'POSITIVE_INFINITY';
   }
-  return rTextPrefix.replace('Number.', n);
+  else {
+    return rTextPrefix.replace('Number.', n);
+  }
 }
 
 //Understanding closures - the basics
